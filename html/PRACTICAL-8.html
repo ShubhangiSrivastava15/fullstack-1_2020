@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRACTICAL-8</title>
+</head>
+<style>
+
+    *{
+        margin: 0px;
+        padding: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .container
+    {
+        width: 1495px;
+         margin-top:0%;
+    }
+
+
+
+    #Banner
+    {
+        width: 1480px;
+        height: 783px;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        color: white;
+        margin-top: 5%;
+
+    }
+
+    p{
+        text-align: center;
+        font-size: 40px;
+        margin-top: 15px;
+        color: rgb(7, 13, 68);
+    }
+
+    #sec1::after{
+        content:'';
+        display: block;
+        clear: both;
+    }
+    #circle1
+    {
+        background-color: yellow;
+        width: 180px;
+        height:160px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        float:left;
+        margin-left: 8%;
+        margin-right: 20px;
+       
+    }
+
+    #circle1 img{
+       
+        border-radius: 50%;
+    }
+    #circle2
+    {
+        background-color: yellow;
+        width: 180px;
+        height:160px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        float:left;
+        margin-left: 10%;
+    }
+    #circle2 img{
+       
+        border-radius: 50%;
+    }
+    #circle3
+    {
+        background-color: yellow;
+        width: 180px;
+        height:160px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        float:left;
+        margin-left: 10%;
+    }
+    #circle3 img{
+       
+        border-radius: 50%;
+    }
+    #circle4
+    {
+        background-color: yellow;
+        width: 180px;
+        height:160px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        float:left;
+        margin-left: 15%;
+    }
+    #circle4 img{
+       
+        border-radius: 50%;
+    }
+
+    #content
+    {
+        margin-bottom: 15px;
+    }
+
+    #content::after{
+        content:'';
+        display: block;
+        clear: both;
+    }
+    #leftside
+        {
+            width: 60%;
+            height: 500px;
+            float: left;
+            background-color:rgb(134, 134, 134);
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            margin-left:1%;
+        }
+
+        #leftside p
+        {
+                font-size: 25px;
+                justify-content:stretch ;
+                
+        }
+    #rightside
+        {
+            width: 38%;
+            float: right;
+            
+        }
+
+        #A1
+        {
+        order: 1;
+        width: 565px;
+        height: 150px;
+        background-color: orange;
+        margin-bottom: 15px;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        color:black;
+        }
+
+        #A1 img{
+        width: 565px;
+        height: 150px;
+        border-radius: 15px;
+        }
+        #A2
+        {
+        order: 2;
+        width: 565px;
+        height: 150px;;
+        background-color: orange;
+        margin-bottom: 15px;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        color:black;
+        }
+
+        #A2 img{
+            width: 565px;
+            height: 150px;
+            border-radius: 15px;
+            }
+        #A3
+        {
+        order: 3;
+        width: 565px;
+        height: 150px;
+        background-color: orange;
+        margin-bottom: 15px;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        color:rgba(13, 8, 63, 0.267);
+        }
+
+        #A3 img{
+            width: 565px;
+            height: 150px;
+            border-radius: 15px;
+            }
+
+        #sec3
+        {
+            margin-bottom:18%;
+        }
+        h3
+        {
+        text-align:center;
+        font-family: 'Red Rose', cursive;
+        }
+        #Rec1
+        {
+            border: 2px solid black;
+            border-radius: 5px;
+            width:300px;
+            height: 450px;
+            background-color: white;
+           margin-left:45px;
+            float: left;
+        }
+
+        #Rec1 img
+        {
+            width: 250px;
+            height: 131px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px;
+            margin-top:35px;
+        }
+
+        #Rec1 p 
+        {
+            font-size: 20px;
+            color: black;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        #Rec1 a
+        {
+            display: block;
+            border: 1px black solid;
+            background-color: red;
+            border-radius: 5px;
+            text-align: center;
+            width: 80%;
+            text-decoration: none;
+           padding: 8px;
+           padding-left: 10px;
+           margin-left: 15px;
+           margin-top: 55px;
+        }
+
+        #Rec2
+        {
+            border: 2px solid black;
+            border-radius: 5px;
+            width:300px;
+            height: 450px;
+            background-color: white;
+           margin-left:35px;
+           margin-right: 25px;
+            float: left;
+        }
+
+        #Rec2 img
+        {
+            width: 250px;
+            height: 131px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px;
+            margin-top:35px;
+        }
+
+        #Rec2 p 
+        {
+            font-size: 20px;
+            color: black;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        #Rec2 a
+        {
+            display: block;
+            border: 1px black solid;
+            background-color: red;
+            border-radius: 5px;
+            text-align: center;
+            width: 80%;
+            text-decoration: none;
+           padding: 8px;
+           padding-left: 10px;
+           margin-left: 15px;
+           margin-top: 55px;
+        }
+        #Rec3
+        {
+            border: 2px solid black;
+            border-radius: 5px;
+            width:300px;
+            height: 450px;
+            background-color: white;
+            margin-left:35px;
+            margin-right: 25px;
+            float: left;
+        }
+
+        #Rec3 img
+        {
+            width: 250px;
+            height: 131px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px;
+            margin-top:35px;
+        }
+
+        #Rec3 p 
+        {
+            font-size: 20px;
+            color: black;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        #Rec3 a
+        {
+            display: block;
+            border: 1px black solid;
+            background-color: red;
+            border-radius: 5px;
+            text-align: center;
+            width: 80%;
+            text-decoration: none;
+           padding: 8px;
+           padding-left: 10px;
+           margin-left: 15px;
+           margin-top: 55px;
+        }
+        #Rec4
+        {
+            border: 2px solid black;
+            border-radius: 5px;
+            width:300px;
+            height: 450px;
+            background-color: white;
+            margin-left:35px;
+            margin-right: 25px;
+            float: left;
+        }
+
+        #Rec4 img
+        {
+            width: 250px;
+            height: 131px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px;
+            margin-top:35px;
+        }
+
+        #Rec4 p 
+        {
+            font-size: 20px;
+            color: black;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        #Rec4 a
+        {
+            display: block;
+            border: 1px black solid;
+            background-color: red;
+            border-radius: 5px;
+            text-align: center;
+            width: 80%;
+            text-decoration: none;
+           padding: 8px;
+           padding-left: 10px;
+           margin-left: 15px;
+           margin-top: 55px;
+        }
+
+        
+        
+
+        #footer
+        {
+        width: 1450px;
+        background-color: rgb(186, 101, 212);
+        height: 70px;
+        margin-bottom: 15px;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        padding-bottom: 5%;
+        color: rgb(255, 255, 255);
+        margin-left: 2%;
+        }
+
+        #top a{
+            font-size: 15px;
+            text-decoration:none;
+            display:block;
+        }
+
+
+
+        #header
+        {
+            width: 1500pxpx;
+            height: 90px;
+            padding-right: 25px;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            color: rgb(255, 255, 255);
+            
+        }
+        #header ul
+        {
+            list-style: none;  
+            background-color:rgb(167, 164, 164);
+            display: flex;
+            justify-content: space-evenly;
+            position: fixed;
+            top: 0;
+            width: 1430px;
+            margin-left: 20px;
+            border-radius: 15px;
+            
+        }
+    
+        #header ul li{
+            /float: left;/
+            display: inline-block;
+            
+        }
+    
+        #header ul li a
+        {
+            
+            display: block;
+            width: 100px;  /to make all box sizes equal/
+            text-align: center;
+            text-decoration: none;
+            padding: 10px 20px;
+            color: black;
+            font-size: 25px;
+        }
+    
+        #header a:hover
+        {
+           background-color:rgba(173, 101, 101, 0.795);
+            width: 200px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+    
+
+
+</style>
+<body>
+    <div class="container">
+        <div id="header">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#aboutus">About</a></li>
+                <li><a href="#aboutteam">Team</a></li>
+                <li><a href="#Techused">Technologies</a></li>
+                <li><a href="#contactus" id="right">Contact</a></li>
+            </ul> 
+            
+        </div>
+        <div id="Banner">
+            <img src="../images/emile-perron-xrVDYZRGdw4-unsplash.jpg" >
+            
+        </div>
+
+
+    <p id="aboutteam" style="margin-top: 4%; margin-bottom:4%;">Team Members</p>
+
+    <div id="sec1"> 
+        <div id="circle1">
+            <img src="../images/1.png" alt="avatar1">
+        </div>
+        <div id="circle2">
+            <img src="../images/2.png" alt="avatar2">
+        </div>
+        <div id="circle3">
+
+            <img src="../images/3.png" alt="avatar3">
+        </div>
+        <div id="circle4">
+            <img src="../images/9.png" alt="avatar4">
+        </div>
+    </div>
+
+
+    <p id="aboutus" style="margin-top: 4%; margin-bottom:4%;">About Us</p>
+
+
+    <div id="content">
+        <div id="leftside">
+            <div id="heading">
+            </div>
+            <p>Everything you have ever seen on the web is considered ‘front end’. Front end is what we see when we open a web
+                page or app. Code is downloaded from a server and is rendered to the screen by a web browser. What happens when
+                we interact with the code is also considered front end. This is often referred to as the ‘Presentation Layer’ or
+                ‘Client’ in software development terms.
+        
+                The front end is built out of three languages: HTML, CSS, and JavaScript. HTML allows us to put content on our
+                page: text, headers, images, buttons, links, and etc. CSS is used to style our page. It allows the contents to
+                have different text colors, background colors, as well as dealing with the positioning of the content on the
+                page. JavaScript makes our page dynamic.</p>
+        </div>
+        <div id="rightside">
+            <div id="A1"> 
+                <img src="../images/p1.jpg" >
+            </div>
+            <div id="A2">
+                <img src="../images/p2.jpeg" >
+            </div>
+            <div id="A3">
+                <img src="../images/p3.jpg" >
+            </div>
+        </div>
+    </div>
+
+
+    <p id="Techused" style="margin-top: 4%; margin-bottom:4%;">Technologies Used</p>
+
+    <div id="sec3">
+        <div id="Rec1">
+            <img src="../images/c.jpg" alt="css">
+            <h3>Introduction to CSS</h3>
+    <p>SS is short for Cascading Style Sheets, and is the preferred way for setting
+    the look and feel of a website.CSS is a markup language responsible for how your web
+    pages will look like.</p>            <a href="../html/cssINTRO.html" target="__blank">Read More</a>
+        </div>
+        <div id="Rec2">
+            <img src="../images/h.jpg" alt="css">
+            <h3>Introduction To HTML</h3>
+            <p>HTML stands for Hypertext Markup Language, and it is the most widely used language to write Web Pages.
+    Hypertext refers to the way in which Web pages are linked together.</p>    
+            <a href="../html/htmINTRO.html" target="__blank">Read More</a>
+        </div>
+        <div id="Rec3">
+            <img src="../images/javascript.png" alt="css">
+            <h3>Introduction To JavaScript</h3>
+            <p>JavaScript is a very powerful client-side scripting language. JavaScript is used
+    mainly for enhancing the interaction of a user with the webpage.It is used in mobile based applications</p>    
+            <a href="../html/jsINTRO.html" target="__blank">Read More</a>
+        </div>
+        <div id="Rec4">
+            <img src="../images/B.png" alt="css">
+            <h3>Introduction To BootStrap</h3>
+            <p>Bootstrap is a free and open-source tool collection for creating responsive
+    websites and web applications.Used in all sizes of screens (Desktop, Tablets, Phablets, and Phones)</p>    
+            <a href="../html/bootstrapINTRO.html" target="__blank">Read More</a>
+        </div>
+    </div> 
+
+        <p  id="contactus" style="margin-top: 38%;">Contact</p>
+
+        <div id="footer">
+            
+            <p id="top">
+                <a href="#header">Back To Top</a>
+            </p>
+       
+          
+        </div>
+    </div>
+
+</div>
+
+
+</body>
+</html>
