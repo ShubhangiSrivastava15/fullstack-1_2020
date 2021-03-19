@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+#menu {
+    box-shadow: 0px 8px #e9e6e6;
+
+}
+
+li {
+  float: left;
+}
+
+#menu li a:hover
+         {
+            color: rgb(252, 57, 90);
+
+        }
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+img{
+    margin-top: 8px;
+    margin-left: 60px;
+    border-right: rgb(247, 187, 212) solid 15px;
+}
+
+h1{
+    float: right;
+    margin-right: 150px;
+    font-size:3vw;
+    color: rgb(83, 82, 82);
+}
+
+p{
+    color: rgb(83, 82, 82);
+    display: inline-block;
+    float: right;
+    font:10px;
+    
+}
+
+/* li a:hover:not(.active) {
+  background-color: rgb(172, 33, 33);
+} */
+
+.active {
+  background-color: rgb(252, 57, 90);
+}
+
+#content{
+    display: inline;
+}
+.btn-group button {
+  background-color:white; /* Green background */
+  border: none; /* Green border */
+  color: black; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: right; /* Float the buttons side by side */
+  padding: 10px;
+  font-size: large;
+
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+
+</style>
+</head>
+<body>
+
+<ul id="menu">
+<!-- <li style="float:left", "border-right: 1px solid #bbb"><a href="#canvas">canvas</a></li> -->
+<li style="float:left", "border-right: 1px solid #bbb"><a href="#canvas">canvas</a></li>
+
+  <li style= "float:right"><a class="active" href="#about">Book Now</a></li>
+  <li style= "float:right"><a href="#home">contact</a></li>
+  <li style= "float:right"><a href="#home">tour</a></li>
+  <li style= "float:right"><a href="#news">about us</a></li>
+  <li style= "float:right"><a href="#contact">home</a></li>
+
+
+
+</ul>
+
+<img src="../hotel.jpg"  width="50%" height="700px">
+<div id="content">
+    
+<h1>Canvas Deluxe Bed</h1>
+<br>
+<p>Lorem ipsum dolor sit amet consecte Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id, </p>
+<br>
+<div class="btn-group">
+    <button>wifi</button>
+    <button>locker</button>
+    <button>food</button>
+    <br>
+    <button>phone available</button>
+    <button>resources</button>
+    <button>services</button>
+  </div>
+</div>
+</body>
+</html>
